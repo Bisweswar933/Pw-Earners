@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: aquamarine;
+    transition-duration: 3s;
+    /* transition-property: background-color; */
+    transition-property: all;
+    /* transition-timing-function: linear; */
+    /* transition-timing-function:ease;   */
+    /* transition-timing-function:ease-in;  */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* transition-delay: 2s; */
+    /* transition: all 2s linear 0 ; */
+
+
+    /* transform: translateX(100px);
+      transform: translateY(100px); */
+    /* transform: translate(100px,100px); */
+    /* transform: scaleY(2); */
+    /* transform: scaleX(1.5); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-name: banty; */
+    animation-name: chiku;
+    animation-duration: 2s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: 1; */
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    animation-direction: alternate-reverse;
+    position: absolute;
+animation-fill-mode: backwards;
+animation-fill-mode: forwards;
+animation-fill-mode: both;
+}
+
+@keyframes banty {
+    from {
+        background-color: red;
+
+    }
+
+    to {
+        background-color: blue;
+        transform: translate(30px, 50px);
+    }
+}
+
+@keyframes chiku {
+
+    0% {
+        background-color: red;
+left: 100%;
+    }
+
+    25% {
+
+        background-color: purple;
+        width: 1000px;
+    }
+    25%{
+        background-color: green;
+    }
+
+    75% {
+        background-color: yellow;
+        width: 500px;
+    }
+
+    100% {
+        width: 700px;
+        background-color: blue;
+        /* transform: translate(30px, 50px); */
+left:0 ;
+    }
+}
+
+/* .box:hover {
+    background-color: brown;
+    width: 1300px;
+} */
+.container:hover>div {
+    /* background-color: brown; */
+    /* width: 1300px; */
+    /* transform: translate(100px, 100px); */
+    transform: scaleX(2);
+    /* transform: translate(300px, 300px) scale(2); */
+
+}
+
+.linear {
+     transition-timing-function: linear;
+    background-color: rgb(217, 13, 13); 
+}
+
+.ease {
+    transition-timing-function: ease;
+    background-color: black;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+    background-color: rgb(240, 11, 114);
+
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+    background-color: blue;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+    background-color: rgb(9, 236, 55);
+}
+
+.btn {
+    background-color: rgb(112, 201, 17);
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: none;
+    margin: 150px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    animation: dukha 2s linear 0s infinite alternate;
+
+}
+@keyframes dukha{
+from{
+
+}
+to{
+    /* transform: scale(2); */
+    transform: translate(0, -5px) scale(1.1) rotate(1deg) skew(25deg);
+
+}
+
+
+}
+.btn:hover {
+    /* transform: translate(0, -5px) scale(1.1) rotate(1deg) skew(25deg); */
+    /* transform: scale(1.1); */
+    /* transform: skew(45deg); */
+    /* transform: rotate(3deg); */
+    /* transform: translate(100px, 100px); */
+    box-shadow: 0px 10px 20px black;
+}

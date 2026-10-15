@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+@media (max-width : 575px) {
+    .wrapper{
+        background-color: rebeccapurple;
+    }
+}
+@media (min-width : 576px) and (max-width : 990px) {
+    .wrapper{
+        background-color: rgb(244, 220, 9);
+    }
+}
