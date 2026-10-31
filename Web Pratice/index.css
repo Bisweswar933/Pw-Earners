@@ -1,0 +1,44 @@
+#wrapper{
+    padding: 100px;
+    border: 20px solid blue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+ }
+span{
+    border:  1px solid black;
+    background-color: red;
+  
+    width: 50px;
+    height: 10px;
+}
+#box3{
+    /* position: fixed;
+    /* position: relative; */
+    /* top: 10px;
+    left: 100px; */ 
+} 
+#box2{
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+}
+#box5{
+    position: fixed;
+    z-index: 8;
+}
+.hello{
+    border: 1px solid black;
+    height: 200px;
+    width: 400px;
+}
+#box1{
+    position: sticky;
+    top: 50px;
+}
+#box4{
+    position: relative;
+    left: 19px;
+    background-color: yellow;
+    z-index: 5;
+}
