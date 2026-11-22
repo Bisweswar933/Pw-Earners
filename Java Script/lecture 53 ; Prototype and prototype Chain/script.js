@@ -4,23 +4,23 @@
 //     age: 22
 // }
 
-// // console.log(user);
+// console.log(user);
 
 
-// Object.prototype.allInOne = function(){
-//     console.log("ladle miauuu");
-// }
+Object.prototype.allInOne = function(){
+    console.log("ladle miauuu");
+}
 
 
-// Array.prototype.printItems = function () {
-//     for (let i = 0; i < this.length; i++)
-//         console.log(this[i]);
-// }
+Array.prototype.printItems = function () {
+    for (let i = 0; i < this.length; i++)
+        console.log(this[i]);
+}
 
-// let arr = [1, 2, 3]
+let arr = [1, 2, 3]
 
 // // console.log(arr.__proto__.__proto__ === user.__proto__);
-// // console.log(arr.__proto__)
+// console.log(arr.__proto__)
 
 // let colors = ["red", "green", "pink"]
 // arr.printItems()
@@ -88,74 +88,74 @@
 
 
 
-class User {
-    country = "india" // default property
-    constructor(name, country2) {
-        this.name = name // instance property
-        this.country = country2 // instance property
-    }
+// class User {
+//     country = "india" // default property
+//     constructor(name, country2) {
+//         this.name = name // instance property
+//         this.country = country2 // instance property
+//     }
 
 
-    printName() { // instance method
-        console.log(this.name);
-    }
-}
+//     printName() { // instance method
+//         console.log(this.name);
+//     } 
+// }
 
 
-const u1 = new User("Nishant", "India")
-const u2 = new User("Akshay", "India")
+// const u1 = new User("Nishant", "India")
+// const u2 = new User("Akshay", "India")
 
-// console.log(u1);
-// console.log(u2);
+// // console.log(u1);
+// // console.log(u2);
 
-u1.printName()
-// u2.printName()
+// u1.printName()
+// // u2.printName()
 
-// console.log(u1.printName() === u2.printName());
+// // console.log(u1.printName() === u2.printName());
 
-// console.log(u1 instanceof User);
+// // console.log(u1 instanceof User);
 
 
-class BankAccount {
-    #balance; // this is private property
-    static totalBankAccount = 0;
-    constructor(initialBalance) {
-        this.#balance = initialBalance
-        BankAccount.totalBankAccount++;
-    }
+// class BankAccount {
+//     #balance; // this is private property
+//     static totalBankAccount = 0;
+//     constructor(initialBalance) {
+//         this.#balance = initialBalance
+//         BankAccount.totalBankAccount++;
+//     }
 
-    get() { // method
-        console.log(this.#balance);
-    }
+//     get() { // method
+//         console.log(this.#balance);
+//     }
 
-    withdraw(amount) { // method
-        if (amount > this.#balance) {
-            console.log("Bete itne paise na hai tere pass");
-            return
-        }
+//     withdraw(amount) { // method
+//         if (amount > this.#balance) {
+//             console.log("Bete itne paise na hai tere pass");
+//             return
+//         }
 
-        this.#balance = this.#balance - amount
-    }
+//         this.#balance = this.#balance - amount
+//     }
 
-    deposit(amount) { // method
-        if (amount <= 0) {
-            console.log("Bete pagal samjha hua kya, muje aate hai edge cases handle krne garib");
-            return
-        }
-        this.#balance = this.#balance + amount
-    }
+//     deposit(amount) { // method
+//         if (amount <= 0) {
+//             console.log("Bete pagal samjha hua kya, muje aate hai edge cases handle krne garib");
+//             return
+//         }
+//         this.#balance = this.#balance + amount
+//     }
 
-    static calculateTax(){ // static method
-        console.log("calculating tax...");
-    }
-}
+//     static calculateTax(){ // static method
+//         console.log("calculating tax...");
+//     }
+// }
 
-let acc1 = new BankAccount(500);
-let acc2 = new BankAccount(500);
-let acc3 = new BankAccount(500);
-let acc4 = new BankAccount(500);
+// let acc1 = new BankAccount(500);
+// let acc2 = new BankAccount(500);
+// let acc3 = new BankAccount(500);
+// let acc4 = new BankAccount(500);
 
-// console.log(acc1 instanceof User);
-// console.log(acc1 instanceof BankAccount);
-// console.log(Number(1) instanceof Object);  // false
-// console.log(new Number(1) instanceof Object); // true
+// // console.log(acc1 instanceof User);
+// // console.log(acc1 instanceof BankAccount);
+// // console.log(Number(1) instanceof Object);  // false
+// // console.log(new Number(1) instanceof Object); // true
